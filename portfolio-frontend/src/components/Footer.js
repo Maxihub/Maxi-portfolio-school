@@ -1,5 +1,7 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
+
+//Simple footer component with links and quickinfo
 const Footer = () => {
   return (
     <footer className="footer">

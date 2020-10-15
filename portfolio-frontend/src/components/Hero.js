@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 // ...GatsbyImageSharpFluid
 
+//Retreiving the image for the hero component
 const query = graphql`
   {
     file(relativePath: { eq: "hero-img.png" }) {
@@ -16,7 +17,7 @@ const query = graphql`
     }
   }
 `
-
+//Hero components structure and look
 const Hero = () => {
   const {
     file: {

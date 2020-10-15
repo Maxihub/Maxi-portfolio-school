@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import SEO from "../components/SEO"
 
+//This will show when a site request is not found
 const Error = () => {
   return (
     <Layout>

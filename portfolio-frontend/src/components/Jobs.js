@@ -4,7 +4,7 @@ import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-
+//retrieve all information from strpi regarding jobs
 const query = graphql`
   {
     allStrapiJobs(sort: {fields: strapiId, order: DESC}) {
@@ -21,7 +21,7 @@ const query = graphql`
   }
 `
 
-
+//Creating jobs using graphql information
 const Jobs = () => {
 
   const data = useStaticQuery(query)
@@ -35,7 +35,7 @@ const Jobs = () => {
   const[value, setValue] = React.useState(0)
   const {company, position, date, desc} = jobs[value]
   console.log(company, position, date, desc)
-
+//The markup and structure of the jobs section
   return(
     <section className="section jobs">
       <Title title="Erfarenheter" />

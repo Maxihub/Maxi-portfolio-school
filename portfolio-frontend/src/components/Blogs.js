@@ -2,6 +2,8 @@ import React from "react"
 import Title from "./Title"
 import Blog from "./Blog"
 import { Link } from "gatsby"
+
+//How all imported blogs should be presented together
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <section className="section">

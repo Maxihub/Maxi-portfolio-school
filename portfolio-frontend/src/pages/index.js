@@ -7,6 +7,8 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+
+//Index is the starting page with all components added and structured the way you want it to
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
@@ -23,7 +25,7 @@ export default ({ data }) => {
     </Layout>
   )
 }
-
+//A graphql to get all jobs and blogs in order to export
 export const query = graphql`
   {
     allStrapiProjects(filter: { featured: { eq: true } }) {

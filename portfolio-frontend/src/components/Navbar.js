@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../assets/logo.png"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+//The main navbar with menu choices are created here
 const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className="navbar">

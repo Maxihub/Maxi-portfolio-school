@@ -8,6 +8,8 @@ not need any local css imports in each js file
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+//This component is the main layout where we import all other components
+
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleSidebar = () => {
